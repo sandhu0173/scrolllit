@@ -1,0 +1,19 @@
+//$content=file_get_contents($url);
+	//echo "<pre>";
+	//print_r(json_decode($content));
+	$m=50;
+	//in each row
+	echo $r=round($m/3);
+	echo "< div col-4><br>";
+	$n=0;
+	for($i=0;$i<=$m;$i++)
+	{
+		if($n==$r)
+		{
+			$n=0;
+			echo "< /div >< div col-4><br>";		
+		}
+		echo "*****img <br>";
+		$n++;
+	}
+	echo "< /div >";
